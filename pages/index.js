@@ -5,8 +5,6 @@ export const getServerSideProps = async (ctx) => {
 
   const session = await getSession(ctx)
   
-
-
   return {
     props: {
       user: session.user
